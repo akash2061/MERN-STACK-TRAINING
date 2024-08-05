@@ -1,3 +1,3 @@
-# MERN-STACK-TRAINING.
+# FULL-STACK-TRAINING.
 
-Welcome to my MERN stack training repository.
+Welcome to my Full-Stack training repository.
