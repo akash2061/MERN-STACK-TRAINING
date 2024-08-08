@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-3</title>
+    <style>
+        #box-1,
+        #box-2 {
+            width: 300px;
+            height: 300px;
+            border: 50px solid black;
+            padding: 50px;
+            margin: 50px;
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #box-1 {
+            background-color: coral;
+        }
+
+        #box-2 {
+            background-color: cornflowerblue;
+        }
+
+        #con {
+            margin: auto 200px;
+            font-size: 14px;
+            color: coral;
+        }
+
+        #combinator {
+            margin: auto 200px;
+        }
+
+        #combinator>p {
+            color: brown;
+        }
+
+        a[target="_blank"] {
+            font-size: 1.3rem;
+        }
+
+        a[target] {
+            color: rgb(148, 148, 148);
+        }
+
+        a {
+            margin: auto 200px;
+        }
+
+        /* #vwvh {
+            width: 50vw;
+            height: 50vh;
+            background-color: aqua;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- ! Css Grouping. -->
+    <div id="container">
+        <div id="box-1">
+            Box-1
+        </div>
+        <div id="box-2">
+            Box-2
+        </div>
+    </div>
+    <!-- ! Container Inheritance -->
+    <div id="con">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum sint nulla odio qui labore voluptatem quo
+            ipsa quis voluptatibus alias, necessitatibus laudantium quas sit sed enim porro doloribus, officia
+            reprehenderit!</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <!-- ! Child Combinators -->
+    <div id="combinator">
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestiae voluptate perferendis?</p>
+    </div>
+    <!-- ! select by target -->
+    <a href="" target="_blank">Link-1</a>
+    <a href="" target="_self">Link-2</a>
+    <a href="">Link-3</a>
+    <!-- ! Units -->
+    <!-- <div id="vwvh"></div> -->
+</body>
+
+</html>
