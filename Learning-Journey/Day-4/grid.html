@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-4</title>
+    <style>
+        /* CSS Grid */
+        .grid-container {
+            border: 1px solid red;
+            display: grid;
+            /* grid-template-columns: auto auto auto; */
+            grid-template-columns: repeat(3, 100px);
+            gap: 10px;
+            /* grid-template-columns: 100px 100px 100px; */
+            grid-template-rows: 100px 100px 100px;
+            justify-content: center;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: black;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Day-4</h1>
+        <h2>CSS Grid</h2>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+        </div>
+    </div>
+</body>
+
+</html>
