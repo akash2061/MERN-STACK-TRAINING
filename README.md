@@ -1,8 +1,15 @@
-# MERN-STACK-TRAINING.
+# MERN-STACK-TRAINING. 
 
-Welcome to my Mern-Stack training repository.
+Welcome to my MERN Stack training repository, conducted by Techno India NJR Institute of Technology.
 
-# Directory Tree:
+## 🔍 Overview. 
+
+This repository contains two main directories: 
+
+- 📂 [`Learning-Journey`](https://github.com/akash2061/MERN-STACK-TRAINING/tree/main/Learning-Journey) :  Tracks daily progress and learning activities.
+- 📂 [`Practice-Questions`](https://github.com/akash2061/MERN-STACK-TRAINING/tree/main/Practice-Questions) :  Includes a collection of practice problems and tasks.
+
+## 🌲 Directory Structure: 
 
 ```ruby
 .
