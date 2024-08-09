@@ -6,17 +6,18 @@ Welcome to my Mern-Stack training repository.
 
 ```ruby
 .
-├── Day-0
-│   ├── dragon.png
-│   ├── index.css
-│   └── index.html
-├── Day-1
-│   ├── form.css
-│   └── form.html
-├── Day-2
-│   └── index.html
-├── Day-3
-│   └── index.html
+├── Learning-Journey
+│   ├── Day-0
+│   │   ├── dragon.png
+│   │   ├── index.css
+│   │   └── index.html
+│   ├── Day-1
+│   │   ├── form.css
+│   │   └── form.html
+│   ├── Day-2
+│   │   └── index.html
+│   └── Day-3
+│       └── index.html
 ├── Practice-Questions
 │   ├── Q-10__Q-20.html
 │   ├── Q-1.html
@@ -33,5 +34,5 @@ Welcome to my Mern-Stack training repository.
 │       └── Task-1.html
 └── README.md
 
-6 directories, 20 files
+7 directories, 20 files
 ```
