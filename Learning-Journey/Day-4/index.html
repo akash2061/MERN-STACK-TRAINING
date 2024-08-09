@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-4</title>
+    <style>
+        #Con-1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        #B1 {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            /* display: none; */
+            display: block;
+        }
+
+        #B2 {
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            /* visibility: hidden; */
+            visibility: visible;
+        }
+
+        #B3 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(34, 126, 126);
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        /* Flex Property */
+        #box {
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 70vh;
+            width: auto;
+            border: 2px solid red;
+            gap: 10px;
+        }
+
+        .BOX {
+            border: 2px solid blue;
+            height: 7rem;
+            width: 7rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="BOX">Box-1</div>
+        <div class="BOX">Box-2</div>
+        <div class="BOX">Box-3</div>
+        <div class="BOX">Box-4</div>
+        <div class="BOX" style="align-self: flex-start;">Box-5</div>
+        <div class="BOX">Box-6</div>
+        <div class="BOX">Box-7</div>
+        <div class="BOX">Box-8</div>
+        <div class="BOX">Box-9</div>
+    </div>
+    <br><br>
+    <!-- <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur optio provident
+            dolorem, reiciendis
+            architecto amet ducimus quaerat aliquid officia? Ipsam doloribus minima deserunt accusantium cum ducimus
+            quisquam quis, hic assumenda eos dicta cupiditate maiores esse officiis fugit voluptatem vitae obcaecati ex
+            porro voluptate, commodi id similique. Culpa, corporis! Cupiditate quibusdam veniam molestias perferendis
+            similique provident labore dolor aperiam accusantium voluptates incidunt nemo illo a dolorem eos, cum
+            numquam. Aspernatur soluta cum labore quasi, dicta error mollitia omnis rem! Sapiente quo iste voluptatibus
+            laborum ea minus, ab obcaecati harum eum doloremque ullam dolor unde? Minus odio ullam beatae reprehenderit
+            pariatur quo eius veritatis ab hic suscipit facilis, minima architecto omnis nemo quaerat dolorum quia amet
+            tempore autem ea quibusdam placeat eaque. Maiores, harum incidunt tempore aliquam veritatis soluta dicta
+            voluptate quo hic, animi sunt? Consequatur unde nostrum consectetur quasi ratione. Dolores, aut porro?
+            Explicabo provident praesentium excepturi voluptatibus fugit, pariatur ipsa nihil aspernatur veritatis
+            exercitationem beatae fuga nulla suscipit quaerat soluta error nisi, incidunt consectetur eum magnam! Qui
+            quasi officia laudantium deleniti deserunt? Temporibus fugiat placeat quam labore expedita! A possimus at
+            sunt omnis ipsa, earum ad vitae, quas, provident ipsam rem quod saepe. In, similique ipsam! Deserunt
+            reiciendis numquam esse?</p>
+    </div> -->
+
+    <div id="Con-1">
+        <div id="B1">
+            Box-1
+        </div>
+        <div id="B2">
+            Box-2 : Hidden
+        </div>
+    </div>
+
+    <!-- 
+    <div id="B3">
+        Box
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque, animi mollitia ex quibusdam sed
+        dolorum maxime sint natus placeat accusamus fuga inventore corrupti asperiores a iste labore eos dicta magnam
+        ipsam saepe dolores! Magni eius facilis ipsa autem tempora repellat nostrum, vel molestias quis? Sapiente ipsam
+        velit sint, quo fugiat fuga veritatis error necessitatibus laborum enim doloremque nihil neque eligendi iste
+        amet molestiae optio? Qui repudiandae ipsam doloremque reprehenderit enim ex itaque facilis corrupti magni?
+        Perspiciatis dignissimos quis reiciendis facilis quae ullam dolore corporis minima similique accusantium magnam
+        blanditiis, expedita esse quas labore odit. Maxime tenetur voluptatem fugit, soluta repellendus, inventore,
+        quisquam et fugiat consequuntur perferendis quaerat eveniet animi quae beatae mollitia! Architecto ipsa delectus
+        laudantium? Non, assumenda illum. Officiis, incidunt? Doloribus illo nesciunt sapiente, veritatis mollitia vel,
+        ipsa hic atque rerum libero obcaecati fugiat, sunt blanditiis temporibus pariatur a! Unde error veniam officia
+        voluptate vel distinctio doloribus quia. Quidem, consequuntur! Fugiat repellat, tempora soluta dolorem vel at,
+        facilis vero et suscipit excepturi iusto provident velit hic! Ducimus dicta fugiat labore eius recusandae
+        beatae, optio a cumque architecto id aperiam delectus quasi dolorem possimus hic mollitia nostrum ratione, quod
+        alias illum facere inventore dolores. Obcaecati repellat nihil at sequi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque, animi mollitia ex quibusdam sed
+        dolorum maxime sint natus placeat accusamus fuga inventore corrupti asperiores a iste labore eos dicta magnam
+        ipsam saepe dolores! Magni eius facilis ipsa autem tempora repellat nostrum, vel molestias quis? Sapiente ipsam
+        velit sint, quo fugiat fuga veritatis error necessitatibus laborum enim doloremque nihil neque eligendi iste
+        amet molestiae optio? Qui repudiandae ipsam doloremque reprehenderit enim ex itaque facilis corrupti magni?
+        Perspiciatis dignissimos quis reiciendis facilis quae ullam dolore corporis minima similique accusantium magnam
+        blanditiis, expedita esse quas labore odit. Maxime tenetur voluptatem fugit, soluta repellendus, inventore,
+        quisquam et fugiat consequuntur perferendis quaerat eveniet animi quae beatae mollitia! Architecto ipsa delectus
+        laudantium? Non, assumenda illum. Officiis, incidunt? Doloribus illo nesciunt sapiente, veritatis mollitia vel,
+        ipsa hic atque rerum libero obcaecati fugiat, sunt blanditiis temporibus pariatur a! Unde error veniam officia
+        voluptate vel distinctio doloribus quia. Quidem, consequuntur! Fugiat repellat, tempora soluta dolorem vel at,
+        facilis vero et suscipit excepturi iusto provident velit hic! Ducimus dicta fugiat labore eius recusandae
+        beatae, optio a cumque architecto id aperiam delectus quasi dolorem possimus hic mollitia nostrum ratione, quod
+        alias illum facere inventore dolores. Obcaecati repellat nihil at sequi!</p> -->
+</body>
+
+</html>
