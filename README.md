@@ -23,7 +23,10 @@ This repository contains two main directories:
 │   │   └── form.html
 │   ├── Day-2
 │   │   └── index.html
-│   └── Day-3
+│   ├── Day-3
+│   │   └── index.html
+│   └── Day-4
+│       ├── grid.html
 │       └── index.html
 ├── Practice-Questions
 │   ├── Q-10__Q-20.html
@@ -35,11 +38,22 @@ This repository contains two main directories:
 │   ├── Q-7.html
 │   ├── Q-8.html
 │   ├── Q-9.html
-│   └── Task-1
-│       ├── child.jpg
-│       ├── Task-1.css
-│       └── Task-1.html
+│   ├── Task-1
+│   │   ├── child.jpg
+│   │   ├── Task-1.css
+│   │   └── Task-1.html
+│   └── Task-2
+│       ├── img1.jpeg
+│       ├── img2.jpeg
+│       ├── img3.jpeg
+│       ├── img4.jpeg
+│       ├── img5.jpeg
+│       ├── img6.jpeg
+│       ├── img7.jpg
+│       ├── img8.jpeg
+│       ├── index.html
+│       └── style.css
 └── README.md
 
-7 directories, 20 files
+9 directories, 32 files
 ```
