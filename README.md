@@ -25,9 +25,11 @@ This repository contains two main directories:
 │   │   └── index.html
 │   ├── Day-3
 │   │   └── index.html
-│   └── Day-4
-│       ├── grid.html
-│       └── index.html
+│   ├── Day-4
+│   │   ├── grid.html
+│   │   └── index.html
+│   └── Day-5
+│       └── psudo.html
 ├── Practice-Questions
 │   ├── Q-10__Q-20.html
 │   ├── Q-1.html
@@ -51,9 +53,9 @@ This repository contains two main directories:
 │       ├── img6.jpeg
 │       ├── img7.jpg
 │       ├── img8.jpeg
-│       ├── index.html
-│       └── style.css
+│       ├── Task-2.html
+│       └── Task-2.css
 └── README.md
 
-9 directories, 32 files
+11 directories, 33 files
 ```
