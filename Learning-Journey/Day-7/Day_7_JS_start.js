@@ -108,3 +108,10 @@ console.log(todo[1].text.split(" "));
 
 const todoJSON = JSON.stringify(todo); //! to  send data to server in json
 console.log(todoJSON);
+
+let num1 = 50;
+let num2 = "50";
+console.log("\n5+'5' : ", 5 + '5', " Type:", typeof (5 + '5'))
+console.log("num1 == num2   :", num1 == num2)
+console.log("num1 === num2  :", num1 === num2)
+console.log("num1 === +num2 :", num1 === +num2) //! type coersion
