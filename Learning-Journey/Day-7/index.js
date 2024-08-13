@@ -8,6 +8,7 @@ console.log(typeof Array_1)
 let a = 10;
 console.log(a);
 a = 20;
+a++;
 console.log(a);
 
 const b = 30;
@@ -35,7 +36,7 @@ console.log(name.split(" "));
 const list = "Name, Age, E-mail, Github";
 console.log(list.split(", "));
 
-//comments
+//! comments
 
 const array = ["apple", "name", 10, 40.04];
 console.log(array);
@@ -44,18 +45,18 @@ console.log(array[3]);
 array[4] = true;
 console.log(array);
 
-array.push(false); //add element in array
+array.push(false); //! add element in array
 console.log(array);
 
-array.unshift(false); //add element to 0 index
+array.unshift(false); //! add element to 0 index
 console.log(array);
 
-array.pop(); //remove last element of array
+array.pop(); //! remove last element of array
 console.log(array);
 
 console.log(array.indexOf("name"));
 
-//object literals
+//! object literals
 
 const person = {
     Name: "VS Code",
@@ -105,5 +106,5 @@ console.log("3 = " + todo[2].text);
 
 console.log(todo[1].text.split(" "));
 
-const todoJSON = JSON.stringify(todo); //to  send data to server in json
+const todoJSON = JSON.stringify(todo); //! to  send data to server in json
 console.log(todoJSON);
