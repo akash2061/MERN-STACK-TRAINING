@@ -115,3 +115,4 @@ console.log("\n5+'5' : ", 5 + '5', " Type:", typeof (5 + '5'))
 console.log("num1 == num2   :", num1 == num2)
 console.log("num1 === num2  :", num1 === num2)
 console.log("num1 === +num2 :", num1 === +num2) //! type coersion
+console.log("Hell" && 'A' || 20) //! Short-Circuit Evaluation
