@@ -33,3 +33,47 @@ for (let i in arr) {
 
 // b = 10;
 // console.log(b);
+
+console.log();
+// console.error();
+// console.worn();
+console.assert(10 < 5, " 10 < 5");
+
+//! object literals
+
+const person = {
+    Name: "VS Code",
+    Age: "**",
+    address: {
+        path: "C:\\ program file\\ nodejs",
+        more: "JavaScript is Fun...!",
+    },
+    arr: ["Hello", "Bye", "Hi"],
+};
+
+console.dir(person);
+console.log(person.Age, person.address);
+console.log(person.arr[1]);
+console.log(person.address.more);
+
+let data = [
+    {
+        x: "int", y: "Integer"
+    },
+    {
+        x: "char", y: "Character"
+    },
+    {
+        x: "double", y: "Double"
+    },
+]
+
+console.table(data);
+console.group("G1:");
+console.log("A");
+console.log("B");
+console.log("C");
+console.log("D");
+console.log("E");
+console.groupEnd();
+console.log("\nGroup end.");
