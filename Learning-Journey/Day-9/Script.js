@@ -65,8 +65,8 @@ let data = [
     },
     {
         x: "double", y: "Double"
-    },
-]
+    }
+];
 
 console.table(data);
 console.group("G1:");
