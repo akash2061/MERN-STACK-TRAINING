@@ -12,3 +12,21 @@ let findArray = a.find((i) => i % 3 == 0);
 console.log("\nFind: " + findArray);
 let findin = a.findIndex((i) => i % 3 == 0);
 console.log("Index: " + findin);
+
+//! Object Methods
+
+let obj = {
+    name: "Morningstar_2061",
+    age: 20
+}
+console.log();
+console.log(obj);
+
+let keys = Object.keys(obj);
+console.log(keys);
+
+let values = Object.values(obj);
+console.log(values);
+
+let entries = Object.entries(obj);
+console.log(entries);
