@@ -30,3 +30,6 @@ console.log(values);
 
 let entries = Object.entries(obj);
 console.log(entries);
+
+let n = Math.random();
+console.log(Math.floor(1000+(n * 9000)));
