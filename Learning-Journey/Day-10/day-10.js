@@ -34,3 +34,10 @@ console.log(entries);
 console.log();
 let n = Math.random();
 console.log(Math.floor(1000 + (n * 9000)));
+
+//! Destructuring
+
+console.log();
+let b = [1, 2, 3, 4, 5];
+const [n1, , n3, ...arr] = b;
+console.log(n1, n3, arr);
