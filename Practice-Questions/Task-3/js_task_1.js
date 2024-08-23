@@ -2,6 +2,7 @@
 function sayHello() {
     return "Hello, World!";
 }
+console.log();
 console.log(sayHello());
 
 
@@ -9,6 +10,7 @@ console.log(sayHello());
 function doubleNumber(number) {
     return number * 2;
 }
+console.log();
 console.log(doubleNumber(5));
 
 
@@ -16,11 +18,13 @@ console.log(doubleNumber(5));
 function addTwoNumbers(num1, num2) {
     return num1 + num2;
 }
+console.log();
 console.log(addTwoNumbers(3, 7));
 
 
 // Arrow Function:
 const doubleNumber2 = (number) => number * 2;
+console.log();
 console.log(doubleNumber2(6));
 
 
@@ -28,6 +32,7 @@ console.log(doubleNumber2(6));
 function subtractTen(number) {
     return number - 10;
 }
+console.log();
 console.log(subtractTen(20));
 
 
@@ -35,6 +40,7 @@ console.log(subtractTen(20));
 function isGreaterThanFive(number) {
     return number > 5;
 }
+console.log();
 console.log(isGreaterThanFive(8));
 console.log(isGreaterThanFive(3));
 
@@ -43,6 +49,7 @@ console.log(isGreaterThanFive(3));
 function isBetweenOneAndTen(number) {
     return number >= 1 && number <= 10;
 }
+console.log();
 console.log(isBetweenOneAndTen(5));
 console.log(isBetweenOneAndTen(15));
 
@@ -55,6 +62,7 @@ function isEven(number) {
         return "Odd";
     }
 }
+console.log();
 console.log(isEven(4));
 console.log(isEven(7));
 
@@ -63,6 +71,7 @@ console.log(isEven(7));
 function checkAge(age) {
     return age >= 18 ? "Adult" : "Minor";
 }
+console.log();
 console.log(checkAge(21));
 console.log(checkAge(16));
 
@@ -83,6 +92,7 @@ function getDayType(dayNumber) {
             return "Invalid day number";
     }
 }
+console.log();
 console.log(getDayType(3));
 console.log(getDayType(7));
 console.log(getDayType(10));
