@@ -40,9 +40,9 @@ This repository contains two main directories:
 │   │   └── index.js
 │   ├── Day-09
 │   │   └── Script.js
-│   ├── Day_10
+│   ├── Day-10
 │   │   └── day-10.js
-│   └── Day_11
+│   └── Day-11
 │       ├── Day_11.js
 │       ├── Dom.html
 │       └── Dom.js
