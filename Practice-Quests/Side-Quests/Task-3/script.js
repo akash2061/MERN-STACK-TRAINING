@@ -9,3 +9,7 @@ console.log(arr2);
 let arr3 = [1, null, 3, 4];
 arr3.shift();
 console.log(arr3);
+
+let arr4 = [0, 3, 5];
+arr4.unshift(null);
+console.log(arr4);
