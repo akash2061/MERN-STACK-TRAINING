@@ -35,3 +35,7 @@ console.log(mappedArr);
 let arr9 = [1, 2, 3, 4, 5];
 let filteredArr = arr9.filter(x => x > 3);
 console.log(filteredArr);
+
+let arr10 = [1, 2, 3, 4, 5];
+let sum = arr10.reduce((acc, curr) => acc + curr, 0);
+console.log(sum);
