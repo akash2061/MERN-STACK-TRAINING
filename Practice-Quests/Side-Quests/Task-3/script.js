@@ -31,3 +31,7 @@ console.log(index);
 let arr8 = [1, 2, 3, 4, 5];
 let mappedArr = arr8.map(x => x * 2);
 console.log(mappedArr);
+
+let arr9 = [1, 2, 3, 4, 5];
+let filteredArr = arr9.filter(x => x > 3);
+console.log(filteredArr);
