@@ -23,3 +23,7 @@ console.log(arr5);
 let arr6 = [1, 2, 3, 4, 5];
 let slicedArr = arr6.slice(1, 3);
 console.log(slicedArr);
+
+let arr7 = [1, 2, 3, 4, 5];
+let index = arr7.indexOf(3);
+console.log(index);
