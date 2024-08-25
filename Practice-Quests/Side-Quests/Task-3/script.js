@@ -13,3 +13,9 @@ console.log(arr3);
 let arr4 = [0, 3, 5];
 arr4.unshift(null);
 console.log(arr4);
+
+let arr5 = [1, 2, 3, 4, 5];
+arr5.splice(2, 1, 99);
+console.log(arr5);
+arr5.splice(1,2, null);
+console.log(arr5);
