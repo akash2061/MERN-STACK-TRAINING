@@ -27,3 +27,7 @@ console.log(slicedArr);
 let arr7 = [1, 2, 3, 4, 5];
 let index = arr7.indexOf(3);
 console.log(index);
+
+let arr8 = [1, 2, 3, 4, 5];
+let mappedArr = arr8.map(x => x * 2);
+console.log(mappedArr);
