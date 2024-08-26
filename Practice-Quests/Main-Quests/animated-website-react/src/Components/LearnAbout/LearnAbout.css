@@ -1,0 +1,132 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.learn-about {
+    width: 100vw;
+    background-color: var(--secondary-background-color);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.learn-about.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.learn-about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mini-heading {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: var(--primary-font);
+    text-align: left;
+}
+
+.main-heading {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: var(--primary-font);
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.point {
+    padding: 20px;
+    border-bottom: 2px solid #838383c9;
+    font-size: 1.4rem;
+    color: var(--background-color);
+    font-family: var(--primary-font);
+    text-align: left;
+}
+
+.learn-more-button {
+    margin-top: 40px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: #000000;
+    background-color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .columns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .learn-about {
+        padding: 30px 15px;
+    }
+
+    .main-heading {
+        font-size: 2.5rem;
+    }
+
+    .point {
+        font-size: 1.2rem;
+    }
+
+    .learn-more-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .point {
+        font-size: 1.2rem;
+    }
+
+    .learn-more-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,144 @@
+.get-in-touch {
+    width: 95vw;
+    padding: 50px;
+    background-color: var(--background-color);
+}
+
+.get-in-touch-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin: 20px 200px;
+}
+
+.get-in-touch-left {
+    width: 40vw;
+    /* flex: 1; */
+    font-family: var(--primary-font);
+    text-align: left;
+    /* margin-left: 150px; */
+}
+
+.get-in-touch-right {
+    width: 40vw;
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000000;
+}
+
+.heading1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.heading2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1.3rem;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.social-icons{
+    color: #333;
+    font-size: 2rem;
+    /* margin-right: 20px; */
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;    
+}
+
+input,
+textarea {
+    width: 80%;
+    padding: 20px;
+    border: none;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+    font-family: var(--primary-font);
+}
+
+button {
+    width: 30%;
+    padding: 15px 40px ;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+    .get-in-touch-container {
+        flex-direction: column;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .mini-heading {
+        font-size: 1.2rem;
+    }
+
+    .social-icons i {
+        font-size: 1.8rem;
+    }
+}
+
+/* Responsive for phones */
+@media (max-width: 480px) {
+    .get-in-touch {
+        padding: 30px;
+    }
+
+    .main-heading {
+        font-size: 1.8rem;
+    }
+
+    .mini-heading {
+        font-size: 1rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* Animation */
+.get-in-touch.animate .get-in-touch-left,
+.get-in-touch.animate .get-in-touch-right {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.get-in-touch-left,
+.get-in-touch-right {
+    opacity: 0;
+    transform: translateY(50px);
+}
