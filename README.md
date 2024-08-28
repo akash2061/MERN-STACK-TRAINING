@@ -46,9 +46,14 @@ This repository contains two main directories:
 │   │   ├── Day_11.js
 │   │   ├── Dom.html
 │   │   └── Dom.js
-│   └── Day-12
-│       ├── index.html
-│       └── script.js
+│   ├── Day-12
+│   │   ├── index.html
+│   │   └── script.js
+│   ├── Day-13
+│   │   ├── await.js
+│   │   └── index.html
+│   └── Day-14
+│       └── day-14/
 ├── Practice-Quests
 │   ├── Main-Quests
 │   │   ├── Task-1
@@ -70,61 +75,7 @@ This repository contains two main directories:
 │   │   │   ├── img8.jpeg
 │   │   │   └── img9.jpeg
 │   │   └── Task-3
-│   │       └── animated-website-react
-│   │           ├── README.md
-│   │           ├── package-lock.json
-│   │           ├── package.json
-│   │           ├── public
-│   │           │   ├── index.html
-│   │           │   └── robots.txt
-│   │           └── src
-│   │               ├── App.css
-│   │               ├── App.js
-│   │               ├── Components
-│   │               │   ├── Business
-│   │               │   │   ├── Business.css
-│   │               │   │   └── Business.jsx
-│   │               │   ├── Consult
-│   │               │   │   ├── Consult.css
-│   │               │   │   └── Consult.jsx
-│   │               │   ├── GetInTouch
-│   │               │   │   ├── GetInTouch.css
-│   │               │   │   └── GetInTouch.jsx
-│   │               │   ├── Header
-│   │               │   │   ├── Header.css
-│   │               │   │   └── Header.jsx
-│   │               │   ├── Hero
-│   │               │   │   ├── Hero.css
-│   │               │   │   └── Hero.jsx
-│   │               │   ├── Images
-│   │               │   │   ├── background.jpg
-│   │               │   │   ├── business.jpg
-│   │               │   │   ├── consult.jpg
-│   │               │   │   ├── icon1.png
-│   │               │   │   ├── icon2.png
-│   │               │   │   ├── icon3.png
-│   │               │   │   ├── icon4.png
-│   │               │   │   ├── info.jpg
-│   │               │   │   ├── logo.png
-│   │               │   │   ├── t1.jpg
-│   │               │   │   └── t2.jpg
-│   │               │   ├── Info
-│   │               │   │   ├── Info.css
-│   │               │   │   └── Info.jsx
-│   │               │   ├── Info2
-│   │               │   │   ├── Info2.css
-│   │               │   │   └── Info2.jsx
-│   │               │   ├── LearnAbout
-│   │               │   │   ├── LearnAbout.css
-│   │               │   │   └── LearnAbout.jsx
-│   │               │   ├── Testimonial
-│   │               │   │   ├── Testimonial.css
-│   │               │   │   └── Testimonial.jsx
-│   │               │   └── WhatWeDo
-│   │               │       ├── WhatWeDo.css
-│   │               │       └── WhatWeDo.jsx
-│   │               ├── index.css
-│   │               └── index.js
+│   │       └── animated-website-react/
 │   └── Side-Quests
 │       ├── Task-1
 │       │   ├── HTML Assignment.docx
@@ -142,10 +93,17 @@ This repository contains two main directories:
 │       │   ├── JavaScript_Assignment_Task_2.pdf
 │       │   ├── js_task_1.js
 │       │   └── js_task_2.js
-│       └── Task-3
-│           ├── JavaScript_Array_Methods_Assignment.pdf
-│           └── script.js
+│       ├── Task-3
+│       │   ├── JavaScript_Array_Methods_Assignment.pdf
+│       │   └── script.js
+│       ├── Task-4
+│       │   ├── Questions.txt
+│       │   ├── index.html
+│       │   └── script.js
+│       └── Task-5
+│           ├── Async_JS_Assignment.pdf
+│           └── Task-5.js
 └── README.md
 
-39 directories, 94 files
+47 directories, 114 files
 ```
