@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react'
+import Toggle from './Test-Component/Toggle'
 
 const Reducer = () => {
     const initialState = { count: 0, loading: true };
@@ -19,7 +20,7 @@ const Reducer = () => {
     }
     const [state, dispatch] = useReducer(countReducer, initialState);
     return (
-        <div className='p-20 flex flex-col items-center justify-center min-h-screen'>
+        <div className='p-20 flex flex-col items-center justify-center min-h-screen bg-rose-500'>
             <p className='text-2xl text-white'>
                 {state.count}
             </p>
@@ -32,8 +33,10 @@ const Reducer = () => {
                     dispatch({ type: "decrement" })
                 }}>decrement</button>
             </div>
+            <div>
+                <Toggle />
+            </div>
         </div>
-
     )
 }
 
