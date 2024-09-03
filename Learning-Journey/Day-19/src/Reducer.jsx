@@ -20,18 +20,18 @@ const Reducer = () => {
     }
     const [state, dispatch] = useReducer(countReducer, initialState);
     return (
-        <div className='p-20 flex flex-col items-center justify-center min-h-screen bg-rose-500'>
+        <div className='p-20 flex flex-col items-center justify-center min-h-screen'>
             <p className='text-2xl text-white'>
                 {state.count}
             </p>
             <br />
             <div className='p-20 flex justify-around gap-20'>
-                <button className='p-2 bg-gray-200' onClick={() => {
+                <button className='p-2 bg-sky-200 rounded-md w-32 transform active:scale-95 transition-transform duration-100' onClick={() => {
                     dispatch({ type: "increment" })
-                }}>increment</button>
-                <button className='p-2 bg-gray-200' onClick={() => {
+                }}>Increment</button>
+                <button className='p-2 bg-sky-200 rounded-md w-32 transform active:scale-95 transition-transform duration-100' onClick={() => {
                     dispatch({ type: "decrement" })
-                }}>decrement</button>
+                }}>Decrement</button>
             </div>
             <div>
                 <Toggle />

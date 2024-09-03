@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-    <div className=' bg-gray-500'>
+    <div className=' bg-indigo-950'>
       <Reducer/>
     </div>
     </>
