@@ -3,6 +3,7 @@
 // const fs = require("fs"); // same as -> import fs from "fs";
 const os = require("os");
 const path = require("path");
+const http = require("http");
 
 // fs.writeFileSync("fileName.txt", "Content")
 
@@ -43,20 +44,31 @@ const path = require("path");
 //     console.log(e);
 // });
 
-console.log();
-console.log(os.arch());
-console.log(os.platform());
-console.log(os.hostname());
-console.log(os.totalmem() / 1024 / 1024 / 1024);
-console.log(os.freemem() / 1024 / 1024 / 1024);
-console.log();
+//! OS
+// console.log();
+// console.log(os.arch());
+// console.log(os.platform());
+// console.log(os.hostname());
+// console.log(os.totalmem() / 1024 / 1024 / 1024);
+// console.log(os.freemem() / 1024 / 1024 / 1024);
+// console.log();
 
-let filepath = "/home/morningstar_2061/Code/MERN-STACK-TRAINING/NodeJS/Day-23/index.js"
-console.log(path.dirname(filepath));
-console.log(path.extname(filepath));
-console.log(path.basename(filepath));
-console.log(path.parse(filepath));  //? Return object
-console.log(path.join("user", "ref", "bin"));
-console.log(path.resolve("user", "ref", "bin"));
-console.log();
+//! Path
+// let filepath = "/home/morningstar_2061/Code/MERN-STACK-TRAINING/NodeJS/Day-23/index.js"
+// console.log(path.dirname(filepath));
+// console.log(path.extname(filepath));
+// console.log(path.basename(filepath));
+// console.log(path.parse(filepath));  //? Return object
+// console.log(path.join("user", "ref", "bin"));
+// console.log(path.resolve("user", "ref", "bin"));
+// console.log();
 
+//! HTTP
+const server = http.createServer((req, res) => {
+    console.log(req);
+    res.end("Hello");
+});
+server.listen(300, "127.0.0.1", () => {
+    console.log("server is running at http://127.0.0.1:300");
+});
+// console.log(server);
