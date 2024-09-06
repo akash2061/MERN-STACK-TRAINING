@@ -30,6 +30,8 @@ const server = http.createServer((req, res) => {
     }
 });
 
+//! Event
+
 // event.on("Home", () => {
 //     console.log("Home Page Accessed");
 // });
@@ -44,19 +46,25 @@ const server = http.createServer((req, res) => {
 //     }
 // });
 
-server.on("request", (req, res) => {
-    if (req.url != "/favicon.ico") {
-        console.log("Request Event", req.url);
-    }
+//! Server
+
+// server.on("request", (req, res) => {
+//     if (req.url != "/favicon.ico") {
+//         console.log("Request Event", req.url);
+//     }
+// });
+
+server.on("connection", (socket) => {
+    console.log("Connection");
 });
 
-server.on("close",()=>{
-    console.log("Server Close");
-});
+// server.on("close",()=>{
+//     console.log("Server Close");
+// });
 
-setTimeout(() => {
-    server.close();
-}, 5000);
+// setTimeout(() => {
+//     server.close();
+// }, 5000);
 
 server.listen(300, "127.0.0.1", () => {
     console.log("server is running at http://127.0.0.1:300");
