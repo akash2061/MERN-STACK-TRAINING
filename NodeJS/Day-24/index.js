@@ -17,7 +17,20 @@ const event = new EventEimtter();
 // event.emit("myName");
 // event.emit("myID", "Morningstar_2061", 20);
 
+let storedData = "";
 const server = http.createServer((req, res) => {
+    let body = "";
+    if (req.method === "POST") {
+        req.on("data", (chunk) => {
+            body += chunk.toString();
+        });
+        req.on("end", () => {
+            storedData = JSON.parse(body);
+            console.log(storedData);
+            res.end(JSON.stringify(storedData));
+        });
+    }
+
     if (req.url == "/") {
         res.end("Home Page");
         event.emit("Home");
