@@ -6,17 +6,19 @@ router.get("/users", (req, res) => { //! http://localhost:3000/api/users
     res.send({ message: "User Fetched", data: "users" });
 });
 
-router.post("/users", (req, res) => { //! http://localhost:3000/api/createUser
+router.post("/users", (req, res) => { //! http://localhost:3000/api/users
     const data = req.body;
-    users.push(data);
+    const modifyData = { id: users.length + 1, ...data };
+    users.push(modifyData);
     res.send({ message: "User Created", data: data });
 });
 
-router.put("/updateUser", (req, res) => { //! http://localhost:3000/api/updateUser
-    
+router.put("/users/:id", (req, res) => { //! http://localhost:3000/api/users
+    // console.log(req.params);
+    const { id } = req.params;
 });
 
-router.delete("/deleteUser", (req, res) => { //! http://localhost:3000/api/deleteUser
+router.delete("/users", (req, res) => { //! http://localhost:3000/api/users
 
 });
 
