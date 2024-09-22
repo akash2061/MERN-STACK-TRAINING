@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #3b5998;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-content h2 {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+}
+
+.login-form input {
+    margin-right: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+#login-btn {
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#login-btn:hover {
+    background-color: #365899;
+}
+
+.forgot-link {
+    color: #dfe3ee;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.create-account-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.create-account-container {
+    background-color: white;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.create-account-container:hover {
+    transform: translateY(-5px);
+}
+
+.create-account-container h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.create-account-container p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    margin-top: 20px;
+}
+
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.name-fields input {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form input:focus {
+    border: 1px solid #4267b2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form select:focus {
+    border: 1px solid #4267b2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.birthday-gender-fields {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto auto 10px;
+}
+
+.birthday-fields {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.birthday-fields select {
+    margin-right: 5px;
+    padding: 8px;
+}
+
+.gender-fields {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem;
+    width: 35%;
+}
+
+.gender-fields input {
+    margin-right: 5px;
+}
+
+#signup-btn {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#signup-btn:hover {
+    background-color: #36a420;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.birthday-fields input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.birthday-fields input[type="date"]:focus {
+    border: 1px solid #4267b2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
