@@ -4,8 +4,8 @@ import Vector from './assets/adaptive-icon.png';
 
 export default function App() {
   return (
-    <View style={{backgroundColor : "black", justifyContent:'center', alignItems:'center', flex:1, paddingTop:30}}>
-      <ScrollView>
+    <ScrollView>
+      <View style={{backgroundColor : "black", justifyContent:'center', alignItems:'center', flex:1, paddingTop:30}}>
         <Text style={{color:"azure", fontSize:50}}>Hello </Text>
         <Text style={{color:"azure", fontSize:50}}>Hello </Text>
         <Text style={{color:"azure", fontSize:50}}>Hello </Text>
@@ -20,8 +20,8 @@ export default function App() {
         <Image source={{uri:"https://avatars.githubusercontent.com/u/113748706?v=4"}} style={{height:100, width:100}}/>
         <Image source={{uri:"https://avatars.githubusercontent.com/u/113748706?v=4"}} style={{height:100, width:100}}/>
         <Image source={{uri:"https://avatars.githubusercontent.com/u/113748706?v=4"}} style={{height:100, width:100}}/>
-      </ScrollView>
-    </View>
+      </View>
+    </ScrollView>
   );
 }
 
