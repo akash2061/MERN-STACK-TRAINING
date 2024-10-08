@@ -87,59 +87,55 @@
 //     color: Platform.OS === "android" ? "blue" : "red"
 //   }
 // });
-
 import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
-import { ActivityIndicator, Alert, Button, Image, ImageBackground, Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import Vector from "./assets/splash.png"
-import { useState } from 'react';
-import Box from './components/Box';
+import { ActivityIndicator, Alert, Button, Dimensions, Image, ImageBackground, Modal, Platform, Pressable, ScrollView, StatusBar, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+// import Vector from "./assets/splash.png"
+// import { useState } from "react";
+// import Box from './components/Box';
+// import List from './components/List';
+// import Inputs from './components/Inputs';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import Home from './components/Home';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// import Home from './components/Home';
+// import Login from './components/Login';
+// import Signup from './components/Signup';
+// import { createDrawerNavigator } from '@react-navigation/drawer';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import AppNavigation from './navigations/AppNavigation';
+
+
 
 export default function App() {
 
-  const [open, setOpen] = useState(false);
-
-  const Stack = createNativeStackNavigator();
-  const Drawer = createDrawerNavigator();
-
-
+  // const [open, setOpen] = useState(false)
+  // const { width, height } = useWindowDimensions();
+  // const Stack = createNativeStackNavigator();
+  // const Drawer = createDrawerNavigator();
+  // const Tab = createBottomTabNavigator();
   return (
-
     <View style={[styles.container]}>
-
       <NavigationContainer>
-        {/* <Stack.Navigator>
-					<Stack.Screen name='Home' component={Home} />
-					<Stack.Screen name='Login' component={Login} />
-				</Stack.Navigator> */}
-
-
-        <Drawer.Navigator>
-          <Drawer.Screen name='Home' component={Home} />
-          <Drawer.Screen name='Login' component={Login} />
-          <Drawer.Screen name='Signup' component={Signup} />
-        </Drawer.Navigator>
-
+        <AppNavigation />
       </NavigationContainer>
-
     </View>
-
-
-
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
+    backgroundColor: 'lightgreen',
+
+
+
   },
-})
+  box: {
+    backgroundColor: "skyblue",
+    justifyContent: "center", alignItems: "center"
+  },
+  boxText: {
+    fontSize: 40,
+    fontWeight: "bold",
+    color: Platform.OS === "android" ? "blue" : "red"
+  }
+});
