@@ -1,12 +1,12 @@
 import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
-import { useState , useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Button, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function Camera() {
   const [facing, setFacing] = useState('back');
   const [permission, requestPermission] = useCameraPermissions();
-  const [capturedImage , setCapturedImage] = useState(null);
-  const [isCameraVisible , setIsCameraVisible] = useState(true);
+  const [capturedImage, setCapturedImage] = useState(null);
+  const [isCameraVisible, setIsCameraVisible] = useState(true);
 
   const cameraRef = useRef();
   if (!permission) {
@@ -27,34 +27,34 @@ export default function Camera() {
   function toggleCameraFacing() {
     setFacing(current => (current === 'back' ? 'front' : 'back'));
   }
-console.log(capturedImage);
-  const handleCapture = async ()=>{
+  console.log(capturedImage);
+  const handleCapture = async () => {
     try {
-        const photo = await cameraRef.current.takePictureAsync();
-        setCapturedImage(photo);
-        setIsCameraVisible(false);
+      const photo = await cameraRef.current.takePictureAsync();
+      setCapturedImage(photo);
+      setIsCameraVisible(false);
     } catch (error) {
-        console.log(error)
+      console.log(error)
     }
   }
 
   return (
     <View style={styles.container}>
-        {isCameraVisible ? 
+      {isCameraVisible ?
         <CameraView style={styles.camera} facing={facing} ref={cameraRef}>
-        <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.button} onPress={toggleCameraFacing}>
-            <Text style={styles.text}>Flip Camera</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={handleCapture}>
-            <Text style={styles.text}>Capture</Text>
-          </TouchableOpacity>
-        </View>
-      </CameraView>
-      :
-      <Image source={{uri : capturedImage.uri}} style={{width : 500 , height : 600}} />
-    }
-      
+          <View style={styles.buttonContainer}>
+            <TouchableOpacity style={styles.button} onPress={toggleCameraFacing}>
+              <Text style={styles.text}>Flip Camera</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button} onPress={handleCapture}>
+              <Text style={styles.text}>Capture</Text>
+            </TouchableOpacity>
+          </View>
+        </CameraView>
+        :
+        <Image source={{ uri: capturedImage.uri }} style={{ width: 500, height: 600 }} />
+      }
+
     </View>
   );
 }

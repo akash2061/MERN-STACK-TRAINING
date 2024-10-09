@@ -4,7 +4,7 @@ import React from 'react'
 const Profile = ({ navigation }) => {
   return (
     <View>
-      <Button title="Open Camera" onPress={()=>{navigation.navigate("Camera")}} />
+      <Button title="Open Camera" onPress={() => { navigation.navigate("Camera") }} />
     </View>
   )
 }
