@@ -7,12 +7,12 @@ import Profile from '../components/Profile';
 import ProfileNavigation from './ProfileNavigation';
 
 const AdminNavigation = () => {
-    const Tab = createBottomTabNavigator();
+  const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator>
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Admin" component={Admin} />
-        <Tab.Screen name="ProfileScreen" component={ProfileNavigation} options={{headerShown : false}} />
+      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Admin" component={Admin} />
+      <Tab.Screen name="ProfileScreen" component={ProfileNavigation} options={{ headerShown: false }} />
     </Tab.Navigator>
   )
 }

@@ -8,7 +8,7 @@ import Login from '../components/Login';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Signup from '../components/Signup';
 
-const LoginStack = ()=>{
+const LoginStack = () => {
     const Stack = createNativeStackNavigator();
     return (
         <Stack.Navigator>
@@ -20,13 +20,13 @@ const LoginStack = ()=>{
 
 const AuthNavigation = () => {
     const Tab = createBottomTabNavigator();
-  return (
-    <Tab.Navigator>
-        <Tab.Screen name='Home' component={Home} />
-        <Tab.Screen name='Cart' component={Cart} />
-        <Tab.Screen name='LoginScreen' component={LoginStack}  options={{headerShown : false}} />
-    </Tab.Navigator>
-  )
+    return (
+        <Tab.Navigator>
+            <Tab.Screen name='Home' component={Home} />
+            <Tab.Screen name='Cart' component={Cart} />
+            <Tab.Screen name='LoginScreen' component={LoginStack} options={{ headerShown: false }} />
+        </Tab.Navigator>
+    )
 }
 
 export default AuthNavigation

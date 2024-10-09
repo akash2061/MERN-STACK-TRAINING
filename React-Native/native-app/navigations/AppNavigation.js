@@ -6,16 +6,16 @@ import AdminNavigation from './AdminNavigation';
 import UserNavigation from './UserNavigation';
 
 const AppNavigation = () => {
-    const [isAuth , setIsAuth] = useState(true);
-    const [role , setRole] = useState("Admin");
+  const [isAuth, setIsAuth] = useState(true);
+  const [role, setRole] = useState("Admin");
   return (
-    <View style={{flex :1}}>
+    <View style={{ flex: 1 }}>
       {
-        !isAuth ? 
-        <AuthNavigation />
-        : role === "Admin" ?
-        <AdminNavigation /> 
-        : <UserNavigation />
+        !isAuth ?
+          <AuthNavigation />
+          : role === "Admin" ?
+            <AdminNavigation />
+            : <UserNavigation />
       }
     </View>
   )

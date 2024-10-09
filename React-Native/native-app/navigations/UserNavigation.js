@@ -7,12 +7,12 @@ import Profile from '../components/Profile';
 import ProfileNavigation from './ProfileNavigation';
 
 const UserNavigation = () => {
-    const  Tab = createBottomTabNavigator();
+  const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator>
-        <Tab.Screen name='Home' component={Home} />
-        <Tab.Screen name='Cart' component={Cart} />
-        <Tab.Screen name='ProfileScreen' component={ProfileNavigation} options={{headerShown : false}} />
+      <Tab.Screen name='Home' component={Home} />
+      <Tab.Screen name='Cart' component={Cart} />
+      <Tab.Screen name='ProfileScreen' component={ProfileNavigation} options={{ headerShown: false }} />
     </Tab.Navigator>
   )
 }

@@ -5,11 +5,11 @@ import Profile from '../components/Profile';
 import Camers from '../components/Camers';
 
 const ProfileNavigation = () => {
-    const Stack = createNativeStackNavigator();
+  const Stack = createNativeStackNavigator();
   return (
     <Stack.Navigator>
-        <Stack.Screen name='Profile' component={Profile} />
-        <Stack.Screen name='Camera' component={Camers} />
+      <Stack.Screen name='Profile' component={Profile} />
+      <Stack.Screen name='Camera' component={Camers} />
     </Stack.Navigator>
   )
 }
